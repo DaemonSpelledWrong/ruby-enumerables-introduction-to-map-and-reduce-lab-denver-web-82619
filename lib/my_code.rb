@@ -72,7 +72,7 @@ def reduce_to_any_true(source_array)
     elsif i == source_array.length
       return false
     else
-      return false
+      i += 1
     end
   end
 end
