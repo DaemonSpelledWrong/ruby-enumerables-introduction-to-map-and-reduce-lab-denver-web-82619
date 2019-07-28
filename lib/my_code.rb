@@ -66,13 +66,15 @@ end
 
 def reduce_to_any_true(source_array)
   i = 0
+  total = 0
     while i < source_array.length do
     if source_array[i]
-      return true
+      total = true
     elsif i == source_array.length
-      return false
+      total = false
     else
       i += 1
     end
   end
+  total
 end
