@@ -70,7 +70,11 @@ def reduce_to_any_true(source_array)
     unless source_array[i] == true
       source_array[i]
     else
-      i += 1
+      if i == source_array.length
+        false
+      else
+        i += 1
+      end
     end
   end
 end
